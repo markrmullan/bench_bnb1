@@ -10,7 +10,6 @@ const BenchIndex = React.createClass({
     let benchesArr = [];
     keys.forEach((key) => benchesArr.push(this.state.benches[key]));
     let benches = benchesArr.map((bench) => <BenchIndexItem key={bench.id} bench={bench} />);
-    console.log(this.state.benches);
     return <ul>
       {benches}
     </ul>;
